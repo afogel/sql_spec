@@ -5,5 +5,6 @@ ruby '2.5.1'
 
 gem 'rspec'
 gem 'pg'
+gem 'colorize'
 gem 'dotenv'
 gem 'pry-byebug'
