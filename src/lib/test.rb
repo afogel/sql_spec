@@ -7,12 +7,12 @@ module Test
 		end
 	end
 	def self.it(test_description)
-		a = yield
-		if a.outcome
+		assertion = yield
+		if assertion.outcome
 			puts "it #{test_description}".green
 		else
 			puts "it #{test_description}".red
-			puts a.to_s.red
+			puts assertion.to_s.red
 		end
 	end
 	def self.assert_equal(statement_1, statement_2)
